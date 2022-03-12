@@ -1,0 +1,36 @@
+html,body {
+    min-height: 100%;
+    width: 100%;
+    margin-top: -35px;
+    color: #E8FFC2;
+}
+main {
+    display: block;
+    min-height: 100%;
+    overflow: auto;
+    padding: 1em 0;
+}
+.container{
+    margin-top: -55px;
+}
+main * {
+    font-family: verdana;
+}
+#project-title {
+    text-shadow: 3px 3px 7px #000;
+    padding: 2.5em 1em !important;
+
+}
+.bodycolor{
+    background-color:#C5D8A4 !important ;
+}
+.cd-body{
+    border: none;
+}
+.card-body{
+    background-color: #EFFFFD;
+    color: black;
+}
+textarea{
+    border: none !important;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    
+
+    <style>
+
+    </style>
+</head>
+
+<body class="bodycolor bg-gradient text-light">
+    <main>
+        <div class="col-lg-12">
+            <h1 class="fw-bolder text-center" id="project-title"> Word Counter-App </h1>
+        </div>
+        <div class="container w-100">
+            <div class="card rounded-10 shadow text-dark">
+                <div class="card-body">
+                    <div class="col-lg-12">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-7 col-md-10 col-sm-12 col-sm 12">
+                                <!-- Count Elements -->
+                                <div class="row align-items-center">
+                                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 px-3">
+                                        <large class="fw-bolder"><span class="text-muted">Number of Characters:</span> <span id="total-characters">0</span></large>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 px-3">
+                                        <large class="fw-bolder"><span class="text-muted">Number of Characters <small>(without spaces)</small>:</span> <span id="total-characters-ns">0</span></large>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 px-3">
+                                        <large class="fw-bolder"><span class="text-muted">Number of Words:</span> <span id="total-words">0</span></large>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 px-3">
+                                        <large class="fw-bolder"><span class="text-muted">Number of Paragraphs:</span> <span id="total-paragraphs">0</span></large>
+                                    </div>
+                                </div>
+                                <!-- End of Count Elements -->
+
+                                <div class="card rounded-0 shadow">
+                                    <div class="card-body">
+                                        <!-- Text Field Element -->
+                                        <textarea id="text-field" rows="16" autofocus class="form-control form-control-sm rounded-0" placeholder="Write something here..."></textarea>
+                                        <!-- End of Text Field Element -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
