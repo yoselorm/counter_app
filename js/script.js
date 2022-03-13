@@ -1,16 +1,15 @@
-// Initiate the script below on page window is succesffuly loaded
+
 window.addEventListener("load", () => {
     (function() {
 
-        // Initiating the count on text field input state
         document.getElementById('text-field').addEventListener("input", function(e) {
             // Text Field Value
             var text = document.getElementById('text-field').value
                 // Count Variables
-            var total_chars = 0;
-            var total_chars_ns = 0;
-            var total_words = 0;
-            var total_paragraphs = 0;
+            var totalChar = 0;
+            var totalChar_em = 0;
+            var totalWwords = 0;
+            var totalPar = 0;
 
             // Removing the spaces for counting the characters without the spaces
             var chars = text.replace(/\s/gi, '')
@@ -31,17 +30,16 @@ window.addEventListener("load", () => {
                 return v.length > 0;
             })
 
-            // Setting the count values
-            total_chars = text.length
-            total_chars_ns = chars.length
-            total_words = words.length
-            total_paragraphs = paragraphs.length
+            
+            totalChar = text.length
+            totalChar_em = chars.length
+            totalWwords = words.length
+            totalPar = paragraphs.length
 
-            // Updating the count containers text content
-            document.getElementById('total-characters').innerText = parseFloat(total_chars).toLocaleString('en-US')
-            document.getElementById('total-characters-ns').innerText = parseFloat(total_chars_ns).toLocaleString('en-US')
-            document.getElementById('total-words').innerText = parseFloat(total_words).toLocaleString('en-US')
-            document.getElementById('total-paragraphs').innerText = parseFloat(total_paragraphs).toLocaleString('en-US')
+            document.getElementById('total-characters').innerText = parseFloat( totalChar).toLocaleString('en-US')
+            document.getElementById('total-characters-ns').innerText = parseFloat(totalChar_em).toLocaleString('en-US')
+            document.getElementById('total-words').innerText = parseFloat(totalWwords).toLocaleString('en-US')
+            document.getElementById('total-paragraphs').innerText = parseFloat(totalPar).toLocaleString('en-US')
         })
     })();
 })

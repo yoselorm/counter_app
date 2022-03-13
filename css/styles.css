@@ -16,8 +16,8 @@ main {
 main * {
     font-family: verdana;
 }
-#project-title {
-    text-shadow: 3px 3px 7px #000;
+#title {
+    color: dimgrey;
     padding: 2.5em 1em !important;
 
 }
